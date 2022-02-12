@@ -25,6 +25,7 @@ type_name:
 
 identifier_name:
   excluded:
+    - ok
     - id
     - url
     - app

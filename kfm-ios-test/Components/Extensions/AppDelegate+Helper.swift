@@ -1,8 +1,8 @@
 //
-//  AppDelegate+Common.swift
+//  AppDelegate+Helper.swift
 //  kfm-ios-test
 //
-//  Created by Erwindo Sianipar on 12/02/22.
+//  Created by Erwindo Sianipar on 13/02/22.
 //
 
 import UIKit
