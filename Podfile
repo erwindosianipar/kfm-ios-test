@@ -7,6 +7,8 @@ target 'kfm-ios-test' do
 
   # Pods for kfm-ios-test
   pod 'SwiftLint', '0.43.1'
+  pod 'SnapKit', '5.0.1'
+  pod 'netfox', '1.19.0'
 
   target 'kfm-ios-testTests' do
     inherit! :search_paths

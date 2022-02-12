@@ -3,21 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4C4F6F5FD8F402ECE3434D15 /* Pods_kfm_ios_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665A40D8C39CC849B7A4611B /* Pods_kfm_ios_test.framework */; };
 		7285010BB773089AAD5A12FB /* Pods_kfm_ios_test_kfm_ios_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0090B6A930D47CDA3D22A728 /* Pods_kfm_ios_test_kfm_ios_testUITests.framework */; };
 		F0A384A7B9BE4D531378BFC3 /* Pods_kfm_ios_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD25D6A3538DC661306A142 /* Pods_kfm_ios_testTests.framework */; };
+		FA94D2BE27B6EBD800458A3F /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94D2BD27B6EBD800458A3F /* Then.swift */; };
+		FA94D2C127B6F6E700458A3F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA94D2C027B6F6E700458A3F /* String.swift */; };
 		FAC211C727B680E400C14536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC211C627B680E400C14536 /* AppDelegate.swift */; };
-		FAC211C927B680E400C14536 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC211C827B680E400C14536 /* SceneDelegate.swift */; };
 		FAC211CB27B680E400C14536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC211CA27B680E400C14536 /* ViewController.swift */; };
-		FAC211CE27B680E400C14536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC211CC27B680E400C14536 /* Main.storyboard */; };
 		FAC211D027B680E700C14536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC211CF27B680E700C14536 /* Assets.xcassets */; };
 		FAC211D327B680E700C14536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC211D127B680E700C14536 /* LaunchScreen.storyboard */; };
 		FAC211DE27B680E800C14536 /* kfm_ios_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC211DD27B680E800C14536 /* kfm_ios_testTests.swift */; };
 		FAC211E927B680E800C14536 /* kfm_ios_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC211E827B680E800C14536 /* kfm_ios_testUITests.swift */; };
+		FAF313CA27B7C8D20068C1D4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF313C927B7C8D20068C1D4 /* HomeCoordinator.swift */; };
+		FAF313CC27B7C8E30068C1D4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF313CB27B7C8E30068C1D4 /* AppCoordinator.swift */; };
+		FAF313CF27B7CF780068C1D4 /* ScreenResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF313CE27B7CF780068C1D4 /* ScreenResult.swift */; };
+		FAF313D127B7CFBC0068C1D4 /* NavigationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF313D027B7CFBC0068C1D4 /* NavigationEvent.swift */; };
+		FAF313D327B7D0830068C1D4 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF313D227B7D0830068C1D4 /* Screen.swift */; };
+		FAF313D527B7D1D30068C1D4 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF313D427B7D1D30068C1D4 /* NavigationCoordinator.swift */; };
+		FAF313DB27B7D79B0068C1D4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF313DA27B7D79B0068C1D4 /* HomeViewModel.swift */; };
+		FAF313DF27B7D8370068C1D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF313DE27B7D8370068C1D4 /* HomeViewController.swift */; };
+		FAF313E127B7D8DC0068C1D4 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF313E027B7D8DC0068C1D4 /* HomeScreen.swift */; };
+		FAF313E727B7E8F20068C1D4 /* AppDelegate+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF313E627B7E8F20068C1D4 /* AppDelegate+Common.swift */; };
+		FAF313EB27B7F5110068C1D4 /* StringConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF313EA27B7F5110068C1D4 /* StringConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +58,11 @@
 		93D924B1ED571FC8CEBB0A96 /* Pods-kfm-ios-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kfm-ios-testTests.debug.xcconfig"; path = "Target Support Files/Pods-kfm-ios-testTests/Pods-kfm-ios-testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E22F6AF2DA252B68D9BF871A /* Pods-kfm-ios-test-kfm-ios-testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kfm-ios-test-kfm-ios-testUITests.release.xcconfig"; path = "Target Support Files/Pods-kfm-ios-test-kfm-ios-testUITests/Pods-kfm-ios-test-kfm-ios-testUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F37B7CF6B995C59862DE1E08 /* Pods-kfm-ios-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kfm-ios-testTests.release.xcconfig"; path = "Target Support Files/Pods-kfm-ios-testTests/Pods-kfm-ios-testTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA94D2BD27B6EBD800458A3F /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		FA94D2C027B6F6E700458A3F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		FAC211C327B680E400C14536 /* kfm-ios-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kfm-ios-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC211C627B680E400C14536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAC211C827B680E400C14536 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAC211CA27B680E400C14536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAC211CD27B680E400C14536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAC211CF27B680E700C14536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC211D227B680E700C14536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC211D427B680E700C14536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +72,17 @@
 		FAC211E427B680E800C14536 /* kfm-ios-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kfm-ios-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC211E827B680E800C14536 /* kfm_ios_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kfm_ios_testUITests.swift; sourceTree = "<group>"; };
 		FAC211EA27B680E800C14536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF313C927B7C8D20068C1D4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		FAF313CB27B7C8E30068C1D4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FAF313CE27B7CF780068C1D4 /* ScreenResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenResult.swift; sourceTree = "<group>"; };
+		FAF313D027B7CFBC0068C1D4 /* NavigationEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationEvent.swift; sourceTree = "<group>"; };
+		FAF313D227B7D0830068C1D4 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		FAF313D427B7D1D30068C1D4 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		FAF313DA27B7D79B0068C1D4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FAF313DE27B7D8370068C1D4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FAF313E027B7D8DC0068C1D4 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		FAF313E627B7E8F20068C1D4 /* AppDelegate+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Common.swift"; sourceTree = "<group>"; };
+		FAF313EA27B7F5110068C1D4 /* StringConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +136,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA94D2B127B6E23400458A3F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FAC211C627B680E400C14536 /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		FA94D2B727B6E53B00458A3F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FAF313E927B7F4EF0068C1D4 /* Constants */,
+				FAF313C727B7C2820068C1D4 /* Coordinators */,
+				FA94D2BF27B6F6D800458A3F /* Extensions */,
+				FA94D2BC27B6EBC800458A3F /* Vendors */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FA94D2BC27B6EBC800458A3F /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				FA94D2BD27B6EBD800458A3F /* Then.swift */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		FA94D2BF27B6F6D800458A3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA94D2C027B6F6E700458A3F /* String.swift */,
+				FAF313E627B7E8F20068C1D4 /* AppDelegate+Common.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FAC211BA27B680E400C14536 = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +197,11 @@
 		FAC211C527B680E400C14536 /* kfm-ios-test */ = {
 			isa = PBXGroup;
 			children = (
-				FAC211C627B680E400C14536 /* AppDelegate.swift */,
-				FAC211C827B680E400C14536 /* SceneDelegate.swift */,
+				FAF313D627B7D7480068C1D4 /* Screens */,
+				FAF313CD27B7CF5A0068C1D4 /* Base */,
+				FA94D2B727B6E53B00458A3F /* Components */,
+				FA94D2B127B6E23400458A3F /* Delegate */,
 				FAC211CA27B680E400C14536 /* ViewController.swift */,
-				FAC211CC27B680E400C14536 /* Main.storyboard */,
 				FAC211CF27B680E700C14536 /* Assets.xcassets */,
 				FAC211D127B680E700C14536 /* LaunchScreen.storyboard */,
 				FAC211D427B680E700C14536 /* Info.plist */,
@@ -168,6 +227,60 @@
 			path = "kfm-ios-testUITests";
 			sourceTree = "<group>";
 		};
+		FAF313C727B7C2820068C1D4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				FAF313C827B7C8BC0068C1D4 /* Home */,
+				FAF313CB27B7C8E30068C1D4 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		FAF313C827B7C8BC0068C1D4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FAF313C927B7C8D20068C1D4 /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FAF313CD27B7CF5A0068C1D4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FAF313CE27B7CF780068C1D4 /* ScreenResult.swift */,
+				FAF313D027B7CFBC0068C1D4 /* NavigationEvent.swift */,
+				FAF313D227B7D0830068C1D4 /* Screen.swift */,
+				FAF313D427B7D1D30068C1D4 /* NavigationCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FAF313D627B7D7480068C1D4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FAF313D727B7D74F0068C1D4 /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FAF313D727B7D74F0068C1D4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FAF313DA27B7D79B0068C1D4 /* HomeViewModel.swift */,
+				FAF313DE27B7D8370068C1D4 /* HomeViewController.swift */,
+				FAF313E027B7D8DC0068C1D4 /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FAF313E927B7F4EF0068C1D4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FAF313EA27B7F5110068C1D4 /* StringConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,6 +293,7 @@
 				FAC211C027B680E400C14536 /* Frameworks */,
 				FAC211C127B680E400C14536 /* Resources */,
 				FA94D2B027B6D1B000458A3F /* ShellScript */,
+				205A4B80749648147B41B655 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +331,7 @@
 				FAC211E027B680E800C14536 /* Sources */,
 				FAC211E127B680E800C14536 /* Frameworks */,
 				FAC211E227B680E800C14536 /* Resources */,
+				B88CAB4F0403B2DFDFA3B472 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,7 +392,6 @@
 			files = (
 				FAC211D327B680E700C14536 /* LaunchScreen.storyboard in Resources */,
 				FAC211D027B680E700C14536 /* Assets.xcassets in Resources */,
-				FAC211CE27B680E400C14536 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +434,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		205A4B80749648147B41B655 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kfm-ios-test/Pods-kfm-ios-test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kfm-ios-test/Pods-kfm-ios-test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kfm-ios-test/Pods-kfm-ios-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8B74112623E63C53FF9240AB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +471,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B88CAB4F0403B2DFDFA3B472 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kfm-ios-test-kfm-ios-testUITests/Pods-kfm-ios-test-kfm-ios-testUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kfm-ios-test-kfm-ios-testUITests/Pods-kfm-ios-test-kfm-ios-testUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kfm-ios-test-kfm-ios-testUITests/Pods-kfm-ios-test-kfm-ios-testUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B9C9F03C08BAD25A5FA257BF /* [CP] Check Pods Manifest.lock */ = {
@@ -388,9 +536,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA94D2C127B6F6E700458A3F /* String.swift in Sources */,
 				FAC211CB27B680E400C14536 /* ViewController.swift in Sources */,
+				FAF313E127B7D8DC0068C1D4 /* HomeScreen.swift in Sources */,
 				FAC211C727B680E400C14536 /* AppDelegate.swift in Sources */,
-				FAC211C927B680E400C14536 /* SceneDelegate.swift in Sources */,
+				FAF313CC27B7C8E30068C1D4 /* AppCoordinator.swift in Sources */,
+				FAF313D527B7D1D30068C1D4 /* NavigationCoordinator.swift in Sources */,
+				FAF313D127B7CFBC0068C1D4 /* NavigationEvent.swift in Sources */,
+				FAF313D327B7D0830068C1D4 /* Screen.swift in Sources */,
+				FAF313DB27B7D79B0068C1D4 /* HomeViewModel.swift in Sources */,
+				FAF313EB27B7F5110068C1D4 /* StringConstant.swift in Sources */,
+				FAF313CF27B7CF780068C1D4 /* ScreenResult.swift in Sources */,
+				FA94D2BE27B6EBD800458A3F /* Then.swift in Sources */,
+				FAF313E727B7E8F20068C1D4 /* AppDelegate+Common.swift in Sources */,
+				FAF313CA27B7C8D20068C1D4 /* HomeCoordinator.swift in Sources */,
+				FAF313DF27B7D8370068C1D4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,14 +586,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FAC211CC27B680E400C14536 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAC211CD27B680E400C14536 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAC211D127B680E700C14536 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

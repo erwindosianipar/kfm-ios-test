@@ -29,3 +29,6 @@ https://trello.com/b/pYNoZLIi/kimia-farma-mobile-ios-test
 https://www.metaweather.com/api/
 
 ### Screenshot
+
+Splash screen
+![Splash screen](/screenshot/splash-screen.png)
