@@ -1,24 +1,38 @@
 PODS:
   - netfox (1.19.0)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
   - SnapKit (5.0.1)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
   - netfox (= 1.19.0)
+  - RxCocoa (= 6.2.0)
+  - RxSwift (= 6.2.0)
   - SnapKit (= 5.0.1)
   - SwiftLint (= 0.43.1)
 
 SPEC REPOS:
   trunk:
     - netfox
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SnapKit
     - SwiftLint
 
 SPEC CHECKSUMS:
   netfox: efeec1d23406df6cd605212f09a40957bb5654eb
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 46ef653548659d6f736ccfc155185bf95a997e4a
+PODFILE CHECKSUM: 3981751b3e9862c25d90537b956bd5dc792a3dfd
 
 COCOAPODS: 1.10.1
