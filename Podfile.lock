@@ -1,16 +1,24 @@
 PODS:
+  - netfox (1.19.0)
+  - SnapKit (5.0.1)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
+  - netfox (= 1.19.0)
+  - SnapKit (= 5.0.1)
   - SwiftLint (= 0.43.1)
 
 SPEC REPOS:
   trunk:
+    - netfox
+    - SnapKit
     - SwiftLint
 
 SPEC CHECKSUMS:
+  netfox: efeec1d23406df6cd605212f09a40957bb5654eb
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 426c975d82cb183ef366e5ce2109b39a9e629947
+PODFILE CHECKSUM: 46ef653548659d6f736ccfc155185bf95a997e4a
 
 COCOAPODS: 1.10.1
