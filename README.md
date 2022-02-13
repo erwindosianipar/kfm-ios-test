@@ -30,5 +30,10 @@ https://www.metaweather.com/api/
 
 ### Screenshot
 
-Splash screen
-![Splash screen](/screenshot/splash-screen.png)
+Splash | Search | Detail
+-- | -- | --
+![](/screenshot/splash.png) | ![](/screenshot/search.png) | ![](/screenshot/detail-1.png)
+
+Detail | Popup | Popup
+-- | -- | --
+![](/screenshot/detail-2.png) | ![](/screenshot/popup-detail.png) | ![](/screenshot/popup-information.png)
