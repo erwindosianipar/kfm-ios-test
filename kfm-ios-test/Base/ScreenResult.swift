@@ -9,3 +9,6 @@ internal protocol ScreenResult {}
 
 extension Int: ScreenResult {}
 extension String: ScreenResult {}
+
+extension WeatherScreenResultModel: ScreenResult {}
+extension DetailScreenResultModel: ScreenResult {}

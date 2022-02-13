@@ -50,16 +50,16 @@ internal final class HomeViewController: ViewController {
     }
     
     private func largeTitleAndSearchView() {
-        title = scAppTitle
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.largeTitleDisplayMode = .automatic
+        self.title = scAppTitle
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.largeTitleDisplayMode = .automatic
         
-        navigationItem.searchController = searchController
-        navigationItem.hidesSearchBarWhenScrolling = false
+        self.navigationItem.searchController = searchController
+        self.navigationItem.hidesSearchBarWhenScrolling = false
     }
     
     private func setupTableView() {
-        view.addSubview(tableView)
+        self.view.addSubview(tableView)
         tableView.snp.makeConstraints {
             $0.top.left.right.bottom.equalToSuperview()
         }
@@ -70,8 +70,8 @@ internal final class HomeViewController: ViewController {
         setupTableView()
     }
     
-    private func removeTableViewData() {
-        self.viewModel?.cities = []
+    private func updateTableViewData(data: [LocationSearchResponseModel] = []) {
+        self.viewModel?.cities = data
         self.tableView.reloadData()
     }
     
@@ -81,14 +81,19 @@ internal final class HomeViewController: ViewController {
             .observe(on: MainScheduler.asyncInstance)
             .subscribe(
                 onNext: { [weak self] response in
-                    self?.viewModel?.cities = response
-                    self?.tableView.reloadData()
                     self?.view.toggleLoadingIndicator()
+                    if response.isEmpty {
+                        self?.showAlert(title: scNotFound, message: scCityNotFound)
+                        return
+                    }
+                    self?.updateTableViewData(data: response)
                 },
                 onError: { [weak self] error in
-                    self?.removeTableViewData()
                     self?.view.toggleLoadingIndicator()
-                    self?.showAlert(title: scError, message: error.localizedDescription)
+                    self?.updateTableViewData()
+                    self?.checkInternetConnection(error: error, action: {
+                        self?.searchCity(name: name)
+                    })
                 }
             )
             .disposed(by: disposeBag)
@@ -104,21 +109,37 @@ extension HomeViewController: UISearchBarDelegate {
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        self.removeTableViewData()
+        self.updateTableViewData()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
-            self.removeTableViewData()
+            self.updateTableViewData()
         }
     }
 }
 
 extension HomeViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let viewModel = self.viewModel else {
+            return
+        }
+        
+        let screenResult = WeatherScreenResultModel(data: viewModel.cities[indexPath.row])
+        self.navigationEvent.send(.next(screenResult))
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if let cities = self.viewModel?.cities, cities.isEmpty {
+            return ""
+        }
+        
+        return scSearchResult
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let cities = self.viewModel?.cities else {
