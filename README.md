@@ -14,10 +14,17 @@ Application that shows the weather
 - Xcode 12.5
 - Swift 5
 
+### Dependencies
+
+- SwiftLint — Code linter
+- SnapKit — Auto layout
+- netfox — Network debugger
+- RxSwift - Reactive library
+
 ### Serve
 
 1. Run `pod install` command to download the required dependencies
-2. Open `*.xcworkspace` folder with Xcode that generate by CocoaPods
+2. Open `*.xcworkspace` folder that generate by CocoaPods with Xcode
 3. Choose device target and launch the application from Xcode IDE
 
 ### Trello
