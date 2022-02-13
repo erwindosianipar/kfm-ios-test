@@ -91,4 +91,12 @@ extension NavigationCoordinator {
         let viewController = screen.build()
         navigationController.pushViewController(viewController, animated: true)
     }
+    
+    func present(_ screen: Screenable) {
+        screen.event = { navigation in
+            self.showScreen(identifier: screen.identifier, navigation: navigation)
+        }
+        
+        navigationController.present(screen.build(), animated: true, completion: nil)
+    }
 }

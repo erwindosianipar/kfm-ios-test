@@ -9,8 +9,13 @@ import UIKit
 
 extension UIView {
     
-    func toggleLoadingIndicator() {
+    func toggleLoadingIndicator(_ onCurrentViewController: Bool = false) {
         DispatchQueue.main.async {
+            if onCurrentViewController, let indicator = self.viewWithTag(99999) {
+                indicator.removeFromSuperview()
+                return
+            }
+            
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
                 return
             }
@@ -33,6 +38,13 @@ extension UIView {
                 indicator.snp.makeConstraints {
                     $0.centerX.centerY.equalToSuperview()
                 }
+            }
+            if onCurrentViewController {
+                self.addSubview(layer)
+                layer.snp.makeConstraints {
+                    $0.top.left.right.bottom.equalToSuperview()
+                }
+                return
             }
             appDelegate.window?.addSubview(layer)
             layer.snp.makeConstraints {

@@ -24,11 +24,17 @@ type_name:
     error: 50
 
 identifier_name:
+  allowed_symbols: ["_"]
   excluded:
     - ok
+    - to
     - id
     - url
+    - day
     - app
+    - log
+    - lhs
+    - rhs
   min_length:
     warning: 4
   max_length:
@@ -44,5 +50,14 @@ opt_in_rules:
   - conditional_returns_on_newline
   - private_outlet
   - vertical_whitespace
+  - custom_rules
 
 reporter: "xcode"
+
+custom_rules:
+    no_hard_coded_strings:
+    regex: '^[^#][a-zA-Z0-9][a-zA-Z0-9! ]+'
+    match_kinds:
+      - string
+    message: "Hard coded string is never a good practice"
+    severity: warning

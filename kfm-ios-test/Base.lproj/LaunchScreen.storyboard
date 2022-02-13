@@ -17,18 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DRV-ZN-qDz">
-                                <rect key="frame" x="117" y="360" width="180" height="177"/>
+                                <rect key="frame" x="137" y="380" width="140" height="137"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="IVL-NZ-eAC"/>
-                                    <constraint firstAttribute="height" constant="180" id="jWB-xn-xpN"/>
+                                    <constraint firstAttribute="width" constant="140" id="IVL-NZ-eAC"/>
+                                    <constraint firstAttribute="height" constant="140" id="jWB-xn-xpN"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0H4-z2-uEQ">
-                                <rect key="frame" x="0.0" y="568" width="414" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather © Erwindo Sianipar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0H4-z2-uEQ">
+                                <rect key="frame" x="0.0" y="782" width="414" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="add-QN-22z"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -36,9 +36,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0H4-z2-uEQ" firstAttribute="top" secondItem="DRV-ZN-qDz" secondAttribute="bottom" constant="30" id="PvH-yQ-Sw0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0H4-z2-uEQ" secondAttribute="trailing" id="UlJ-Pa-mDz"/>
                             <constraint firstItem="0H4-z2-uEQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kd4-yb-ZRY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0H4-z2-uEQ" secondAttribute="bottom" constant="50" id="m6P-NQ-M3l"/>
                             <constraint firstItem="DRV-ZN-qDz" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="oZS-aR-dfp"/>
                             <constraint firstItem="DRV-ZN-qDz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rOh-VM-SdZ"/>
                         </constraints>

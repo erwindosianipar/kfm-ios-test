@@ -36,12 +36,32 @@ internal final class HomeCoordinator: NavigationCoordinator {
         switch identifier {
         case kHomeScreen:
             setHomeScreenNavigation(navigation: navigation)
+        case kWeatherScreen:
+            setWeatherScreenNavigation(navigation: navigation)
         default:
             break
         }
     }
     
     private func setHomeScreenNavigation(navigation: Navigation) {
-        // TODO: Handle home navigation here
+        switch navigation {
+        case .next(let value):
+            if let result = value as? WeatherScreenResultModel {
+                push(WeatherScreen(result))
+            }
+        case .prev:
+            return
+        }
+    }
+    
+    private func setWeatherScreenNavigation(navigation: Navigation) {
+        switch navigation {
+        case .next(let value):
+            if let result = value as? DetailScreenResultModel {
+                present(DetailScreen(result))
+            }
+        case .prev:
+            pop()
+        }
     }
 }

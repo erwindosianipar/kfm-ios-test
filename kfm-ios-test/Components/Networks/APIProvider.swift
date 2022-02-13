@@ -7,15 +7,26 @@
 
 import UIKit
 
-enum Kind: Error {
+enum ErrorType: Error {
     case networkError(Error)
     case parsingError(Error)
     case dataNotFound
+    
+    var localizedDescription: String {
+        switch self {
+        case .networkError(let error):
+            return error.localizedDescription
+        case .parsingError:
+            return scParsingError
+        case .dataNotFound:
+            return scDataNotFound
+        }
+    }
 }
 
 enum Result<T> {
     case success(T)
-    case failure(Error)
+    case failure(ErrorType)
 }
 
 internal final class APIProvider {
@@ -27,12 +38,12 @@ internal final class APIProvider {
         
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
             if let error = error {
-                completion(Result.failure(Kind.networkError(error)))
+                completion(Result.failure(ErrorType.networkError(error)))
                 return
             }
             
             guard let data = data else {
-                completion(Result.failure(Kind.dataNotFound))
+                completion(Result.failure(ErrorType.dataNotFound))
                 return
             }
             
@@ -40,7 +51,7 @@ internal final class APIProvider {
                 let decode = try JSONDecoder().decode(response.self, from: data)
                 completion(Result.success(decode))
             } catch let error {
-                completion(Result.failure(Kind.parsingError(error)))
+                completion(Result.failure(ErrorType.parsingError(error)))
             }
         }
         
