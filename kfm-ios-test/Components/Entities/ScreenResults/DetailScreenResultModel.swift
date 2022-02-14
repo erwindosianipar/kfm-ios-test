@@ -5,7 +5,7 @@
 //  Created by Erwindo Sianipar on 13/02/22.
 //
 
-struct DetailScreenResultModel {
+struct DetailScreenResultModel: Decodable {
     
     let woeid: Int
     let isNeedToRequestHistories: Bool

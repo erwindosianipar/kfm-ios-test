@@ -15,10 +15,10 @@ extension ViewController {
         self.present(viewController, animated: true, completion: nil)
     }
     
-    func showAlertWithAction(title: String, message: String, action: (() -> Void)?) {
+    func showAlertWithAction(title: String, confirm: String, message: String, action: (() -> Void)?) {
         let viewController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         viewController.addAction(UIAlertAction(title: scCancel, style: .default, handler: nil))
-        viewController.addAction(UIAlertAction(title: scTryAgain, style: .default) { _ in
+        viewController.addAction(UIAlertAction(title: confirm, style: .default) { _ in
             action?()
         })
         self.present(viewController, animated: true, completion: nil)
@@ -32,7 +32,7 @@ extension ViewController {
                     showAlert(title: scError, message: errorType.localizedDescription)
                     return
                 }
-                showAlertWithAction(title: scError, message: errorType.localizedDescription, action: action)
+                showAlertWithAction(title: scError, confirm: scTryAgain, message: errorType.localizedDescription, action: action)
             case .dataNotFound:
                 showAlert(title: scError, message: errorType.localizedDescription)
             }

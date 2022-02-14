@@ -30,11 +30,13 @@ identifier_name:
     - to
     - id
     - url
+    - add
     - day
     - app
     - log
     - lhs
     - rhs
+    - key
   min_length:
     warning: 4
   max_length:

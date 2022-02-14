@@ -5,7 +5,7 @@
 //  Created by Erwindo Sianipar on 13/02/22.
 //
 
-struct ConsolidatedWeather: Decodable {
+struct ConsolidatedWeather: Decodable, Encodable {
     let id: Int
     let weather_state_name: String
     let weather_state_abbr: String

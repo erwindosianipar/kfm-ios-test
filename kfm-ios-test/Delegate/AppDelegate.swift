@@ -15,12 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
-        // Set network debuger
         NFX.sharedInstance().start()
         
-        // Routing to coordinator
         let appCoordinator = AppCoordinator(window: createWindow())
         appCoordinator.start()
         

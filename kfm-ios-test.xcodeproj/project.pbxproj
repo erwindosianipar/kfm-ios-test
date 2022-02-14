@@ -31,6 +31,10 @@
 		FAA5AA8C27B9480900B4A6B4 /* LogWeatherItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5AA8B27B9480900B4A6B4 /* LogWeatherItemCollectionViewCell.swift */; };
 		FAA5AA8E27B94A6E00B4A6B4 /* LogInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5AA8D27B94A6E00B4A6B4 /* LogInformationView.swift */; };
 		FAA5AA9027B95F2F00B4A6B4 /* DetailScreenResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5AA8F27B95F2F00B4A6B4 /* DetailScreenResultModel.swift */; };
+		FAA5AA9227B9785C00B4A6B4 /* NavigationItemRightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5AA9127B9785C00B4A6B4 /* NavigationItemRightView.swift */; };
+		FAA5AA9427B97D5F00B4A6B4 /* UserDefaultConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5AA9327B97D5F00B4A6B4 /* UserDefaultConfig.swift */; };
+		FAA5AA9627B98EBE00B4A6B4 /* LocationItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5AA9527B98EBE00B4A6B4 /* LocationItemTableViewCell.swift */; };
+		FAA5AA9827B996B100B4A6B4 /* HomeScreenResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA5AA9727B996B100B4A6B4 /* HomeScreenResultModel.swift */; };
 		FAC211C727B680E400C14536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC211C627B680E400C14536 /* AppDelegate.swift */; };
 		FAC211CB27B680E400C14536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC211CA27B680E400C14536 /* ViewController.swift */; };
 		FAC211D027B680E700C14536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC211CF27B680E700C14536 /* Assets.xcassets */; };
@@ -108,6 +112,10 @@
 		FAA5AA8B27B9480900B4A6B4 /* LogWeatherItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogWeatherItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		FAA5AA8D27B94A6E00B4A6B4 /* LogInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInformationView.swift; sourceTree = "<group>"; };
 		FAA5AA8F27B95F2F00B4A6B4 /* DetailScreenResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenResultModel.swift; sourceTree = "<group>"; };
+		FAA5AA9127B9785C00B4A6B4 /* NavigationItemRightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemRightView.swift; sourceTree = "<group>"; };
+		FAA5AA9327B97D5F00B4A6B4 /* UserDefaultConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultConfig.swift; sourceTree = "<group>"; };
+		FAA5AA9527B98EBE00B4A6B4 /* LocationItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItemTableViewCell.swift; sourceTree = "<group>"; };
+		FAA5AA9727B996B100B4A6B4 /* HomeScreenResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenResultModel.swift; sourceTree = "<group>"; };
 		FAC211C327B680E400C14536 /* kfm-ios-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kfm-ios-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC211C627B680E400C14536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC211CA27B680E400C14536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -265,6 +273,7 @@
 			children = (
 				FAA5AA6927B8D23500B4A6B4 /* WeatherScreenResultModel.swift */,
 				FAA5AA8F27B95F2F00B4A6B4 /* DetailScreenResultModel.swift */,
+				FAA5AA9727B996B100B4A6B4 /* HomeScreenResultModel.swift */,
 			);
 			path = ScreenResults;
 			sourceTree = "<group>";
@@ -282,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				FAA5AA6F27B8DBD400B4A6B4 /* NavigationItemLeftView.swift */,
+				FAA5AA9127B9785C00B4A6B4 /* NavigationItemRightView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -301,6 +311,7 @@
 			children = (
 				FAA5AA8127B9178B00B4A6B4 /* DayWeatherItemCollectionViewCell.swift */,
 				FAA5AA8B27B9480900B4A6B4 /* LogWeatherItemCollectionViewCell.swift */,
+				FAA5AA9527B98EBE00B4A6B4 /* LocationItemTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -422,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF313EA27B7F5110068C1D4 /* StringConstant.swift */,
+				FAA5AA9327B97D5F00B4A6B4 /* UserDefaultConfig.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -725,9 +737,11 @@
 				FAF3140627B83F3E0068C1D4 /* String+Helper.swift in Sources */,
 				FAA5AA6A27B8D23500B4A6B4 /* WeatherScreenResultModel.swift in Sources */,
 				FAA5AA8827B931E800B4A6B4 /* DetailViewController.swift in Sources */,
+				FAA5AA9627B98EBE00B4A6B4 /* LocationItemTableViewCell.swift in Sources */,
 				FAF3140E27B83FE20068C1D4 /* Reusable+Helper.swift in Sources */,
 				FAC211C727B680E400C14536 /* AppDelegate.swift in Sources */,
 				FAA5AA7227B8DCA000B4A6B4 /* UIImage+Properties.swift in Sources */,
+				FAA5AA9227B9785C00B4A6B4 /* NavigationItemRightView.swift in Sources */,
 				FAF313F227B817CE0068C1D4 /* WeatherEndpoint.swift in Sources */,
 				FAA5AA6C27B8D5D200B4A6B4 /* WeathersResponseModel.swift in Sources */,
 				FAA5AA7027B8DBD400B4A6B4 /* NavigationItemLeftView.swift in Sources */,
@@ -746,6 +760,7 @@
 				FAA5AA6427B8CD0C00B4A6B4 /* WeatherScreen.swift in Sources */,
 				FAA5AA7B27B906D100B4A6B4 /* WeekInformationView.swift in Sources */,
 				FAA5AA7D27B9088800B4A6B4 /* UICollectionViewFlowLayout+Helper.swift in Sources */,
+				FAA5AA9827B996B100B4A6B4 /* HomeScreenResultModel.swift in Sources */,
 				FAF313D127B7CFBC0068C1D4 /* NavigationEvent.swift in Sources */,
 				FAF313D327B7D0830068C1D4 /* Screen.swift in Sources */,
 				FAA5AA9027B95F2F00B4A6B4 /* DetailScreenResultModel.swift in Sources */,
@@ -758,6 +773,7 @@
 				FAA5AA6027B8CC9400B4A6B4 /* WeatherViewModel.swift in Sources */,
 				FAF313CF27B7CF780068C1D4 /* ScreenResult.swift in Sources */,
 				FA94D2BE27B6EBD800458A3F /* Then.swift in Sources */,
+				FAA5AA9427B97D5F00B4A6B4 /* UserDefaultConfig.swift in Sources */,
 				FAF313CA27B7C8D20068C1D4 /* HomeCoordinator.swift in Sources */,
 				FAF313DF27B7D8370068C1D4 /* HomeViewController.swift in Sources */,
 				FAA5AA8A27B9329D00B4A6B4 /* DetailScreen.swift in Sources */,

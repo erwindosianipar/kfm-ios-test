@@ -5,7 +5,7 @@
 //  Created by Erwindo Sianipar on 13/02/22.
 //
 
-struct WeatherScreenResultModel {
+struct WeatherScreenResultModel: Decodable, Encodable {
     
     let city: String
     let woeid: Int

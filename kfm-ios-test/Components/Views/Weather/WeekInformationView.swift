@@ -23,7 +23,7 @@ internal final class WeekInformationView: UIView {
     }
     
     private let weekInformationLabel = UILabel().then {
-        $0.font = UIFont.systemFont(ofSize: 16)
+        $0.font = .systemFont(ofSize: 16)
     }
     
     private lazy var collectionView: UICollectionView = {

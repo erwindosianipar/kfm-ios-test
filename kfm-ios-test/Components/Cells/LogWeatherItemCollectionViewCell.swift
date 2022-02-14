@@ -19,12 +19,12 @@ internal final class LogWeatherItemCollectionViewCell: UICollectionViewCell {
     
     private let temperatureLabel = UILabel().then {
         $0.textAlignment = .center
-        $0.font = UIFont.systemFont(ofSize: 10)
+        $0.font = .systemFont(ofSize: 10)
     }
     
     private let windSpeedLabel = UILabel().then {
         $0.textAlignment = .center
-        $0.font = UIFont.systemFont(ofSize: 10)
+        $0.font = .systemFont(ofSize: 10)
     }
     
     override init(frame: CGRect) {
