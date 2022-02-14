@@ -4,24 +4,30 @@
 
 Test online for iOS Developer position in Kimia Farma or PT. Buana Varia Komputama
 
-### Purpose
+### Features
 
-Application that shows the weather
+- See the weather in a specific city
+- Synchronize weather data
+- Store specific in home
 
 ### Prerequisite
 
-- CocoaPods 1.10
-- Xcode 12.5
-- Swift 5
+Technology | Version
+-- | --
+CocoaPods | 1.10
+Xcode | 12.5
+Swift | 5
 
 ### Dependencies
 
-- SwiftLint — Code linter
-- SnapKit — Auto layout
-- netfox — Network debugger
-- RxSwift - Reactive library
+Library | Description
+-- | --
+SwiftLint | Code linter
+SnapKit | Auto layout
+netfox | Network debugger
+RxSwift | Reactive library
 
-### Serve
+### Serve App
 
 1. Run `pod install` command to download the required dependencies
 2. Open `*.xcworkspace` folder that generate by CocoaPods with Xcode
