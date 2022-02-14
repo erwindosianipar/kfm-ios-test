@@ -28,7 +28,7 @@ internal final class BaseInformationView: UIView {
     
     private let temperatureLabel = UILabel().then {
         $0.textAlignment = .center
-        $0.font = UIFont.systemFont(ofSize: 60, weight: .bold)
+        $0.font = .systemFont(ofSize: 60, weight: .bold)
     }
     
     private let weatherStatusStackView = UIStackView().then {

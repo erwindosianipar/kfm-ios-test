@@ -23,7 +23,7 @@ internal final class DayWeatherItemCollectionViewCell: UICollectionViewCell {
     
     private let temperatureLabel = UILabel().then {
         $0.textAlignment = .center
-        $0.font = UIFont.systemFont(ofSize: 20)
+        $0.font = .systemFont(ofSize: 20)
     }
     
     private let windSpeedLabel = UILabel().then {

@@ -72,6 +72,21 @@ internal final class WeatherViewController: ViewController {
         
         setupStackView()
         fetchWeathers()
+        addActionButtonView()
+    }
+    
+    private func addActionButtonView() {
+        guard let woeid = self.viewModel?.screenResult.woeid else {
+            return
+        }
+        let contains = UserDefaultConfig.locationData.contains(where: { item in
+            item.meta.woeid == woeid
+        })
+        
+        let navigationItemRightView = NavigationItemRightView(actionButtonType: contains ? .remove : .add)
+        navigationItemRightView.delegate = self
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: navigationItemRightView)
     }
     
     private func fetchWeathers() {
@@ -132,6 +147,42 @@ extension WeatherViewController: LogInformationViewDelegate {
         if let woeid = self.viewModel?.screenResult.woeid {
             let result = DetailScreenResultModel(woeid: woeid, isNeedToRequestHistories: false, consolidatedWeather: data)
             self.navigationEvent.send(.next(result))
+        }
+    }
+}
+
+extension WeatherViewController: NavigationItemRightViewDelegate {
+    
+    func navigationItemRightAction(type: ActionButtonType) {
+        switch type {
+        case .add:
+            navigationItemRightActionAdd(title: scAdd, message: scAddMessage)
+        case .remove:
+            navigationItemRightActionRemove(title: scRemove, message: scRemoveMessage)
+        }
+    }
+    
+    func navigationItemRightActionAdd(title: String, message: String) {
+        self.showAlertWithAction(title: title, confirm: title, message: message) {
+            guard let screen = self.viewModel?.screenResult, let data = self.baseInformationView.data else {
+                return
+            }
+            
+            let locationData = HomeScreenResultModel(meta: screen, data: data)
+            UserDefaultConfig.locationData.append(locationData)
+            self.navigationEvent.send(.prev(nil))
+        }
+    }
+    
+    func navigationItemRightActionRemove(title: String, message: String) {
+        self.showAlertWithAction(title: title, confirm: title, message: message) {
+            guard let screen = self.viewModel?.screenResult,
+                  let index = UserDefaultConfig.locationData.firstIndex(where: { $0.meta.woeid == screen.woeid }) else {
+                return
+            }
+            
+            UserDefaultConfig.locationData.remove(at: index)
+            self.navigationEvent.send(.prev(nil))
         }
     }
 }

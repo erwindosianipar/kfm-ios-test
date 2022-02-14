@@ -30,6 +30,10 @@ let scDay = "dd"
 let scNameAndDate = "EEE dd MMM"
 let scForecastThisWeek = "Week forecast weather"
 let scWeatherHistories = "Weather histories"
+let scAdd = "Add"
+let scAddMessage = "Add this location to home"
+let scRemove = "Remove"
+let scRemoveMessage = "Remove this location from home"
 
 // MARK: - Network
 let scParsingError = "Failed to parse response"
