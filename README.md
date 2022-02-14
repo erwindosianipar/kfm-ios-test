@@ -6,9 +6,9 @@ Test online for iOS Developer position in Kimia Farma or PT. Buana Varia Komputa
 
 ### Features
 
-- See the weather in a specific city
-- Synchronize weather data
-- Store specific in home
+- See weather status in a specific city
+- Synchronize weather status realtime
+- Store weather status of specific city in home
 
 ### Prerequisite
 
