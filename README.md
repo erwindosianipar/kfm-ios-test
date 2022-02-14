@@ -37,10 +37,14 @@ https://www.metaweather.com/api/
 
 ### Screenshot
 
-Splash | Search | Detail
--- | -- | --
-![](/screenshot/splash.png) | ![](/screenshot/search.png) | ![](/screenshot/detail-1.png)
+Splash white | Splash dark | Home default white | Home default dark
+-- | -- | -- | --
+![](/screenshot/splash-white.png) | ![](/screenshot/splash-dark.png) | ![](/screenshot/home-empty-white.png) | ![](/screenshot/home-empty-dark.png)
 
-Detail | Popup | Popup
--- | -- | --
-![](/screenshot/detail-2.png) | ![](/screenshot/popup-detail.png) | ![](/screenshot/popup-information.png)
+Search white | Search dark | Weather white | Weather dark
+-- | -- | -- | --
+![](/screenshot/search-white.png) | ![](/screenshot/search-dark.png) | ![](/screenshot/weather-white.png) | ![](/screenshot/weather-dark.png)
+
+Detail white | Detail dark | Home weather white | Home weather dark
+-- | -- | -- | --
+![](/screenshot/detail-white.png) | ![](/screenshot/detail-dark.png) | ![](/screenshot/home-data-white.png) | ![](/screenshot/home-data-dark.png)
